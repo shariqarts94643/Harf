@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/reboot.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../vendor/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../vendor/icomoon/style.css">
+
+    <title>Worksheet | Harf</title>
+</head>
+
+<body>
+
+    <header id="menu" class=" p-md-3">
+        <div id="topNav" class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn pl-0">
+                    <img src="../img/avatar.png" alt="Avatar">
+                    General Manager
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div dir="rtl" class="lang d-inline">
+                <a href="#"><i class="fas fa-globe"></i><span class="lswitch pr-1">عربي</span></a>
+            </div>
+            
+            <a href="#" class="mtut">View Tutorial</a>
+            <a href="javascript:void(0);" class="icon m-menu" onclick="topNav()">
+                <i class="fa fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <div class=" f-right logo">
+            <a href="#">
+                <img src="../img/harf-logo-menu.svg" alt="harf logo">
+                <img class="s-logo" src="../img/school-logo.svg" alt="school logo">
+            </a>
+        </div>
+    </header>
+
+    <div id="sidenav" class="sidenav">
+        <a href="#"><i class="icon-circular"></i><span>Circular</span></a>
+        <a href="#"><i class="icon-schedule"></i><span>Schedules</span></a>
+        <a href="#"><i class="icon-weekly-plan"></i> <span>Weekly Plan</span></a>
+        <a href="#"><i class="icon-virtual-class"></i><span>Virtual Class</span></a>
+        <a href="#"><i class="icon-evaluation-setup"></i><span>Worksheet</span></a>
+        <a href="#"><i class="icon-videos"></i><span>Videos</span></a>
+        <a href="#"><i class="icon-homework"></i><span>H.W. Response</span></a>
+        <a href="#"><i class="icon-portion"></i><span>Portion</span></a>
+        <a href="#"><i class="icon-preview-survey"></i><span>Exam Response</span></a>
+        <a href="#"><i class="icon-e-books"></i><span>E-Books</span></a>
+        <a href="#"><i class="icon-activities"></i><span>Activities</span></a>
+        <a href="#"><i class="icon-competetion"></i><span>Competition</span></a>
+        <a href="#"><i class="icon-absence"></i><span>Absence</span></a>
+        <a href="#"><i class="icon-preview-message"></i><span>Preview Message</span></a>
+        <a href="#"><i class="icon-notification"></i><span>Notification</span></a>
+        <a href="#"><i class="icon-t-evaluation"></i><span>Evaluation</span></a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span id="oSideBar" class="oSideBar" onclick="sideNav()">
+        <i class="fas fa-arrow-right"></i>
+    </span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" class="main">
+
+        <div class="container-fluid">
+            <div id="breadcrumb" class="d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="breadcrumb-item active"><a href="#"><i class="icon-evaluation-setup"></i> Student Page</a></li>
+                </ol>
+                <div class="time text-right">
+                    <p><i class="far fa-clock"></i> 21st October 2020, 10:09 am</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-tab1-tab" data-toggle="tab" href="#tab1" dir="rtl">تفسير</a>
+                    <a class="nav-link" id="nav-tab2-tab" data-toggle="tab" href="#tab2" dir="rtl">توحيد</a>
+                    <a class="nav-link" id="nav-tab3-tab" data-toggle="tab" href="#tab3" dir="rtl">حديث</a>
+                    <a class="nav-link" id="nav-tab4-tab" data-toggle="tab" href="#tab4" dir="rtl">فقه</a>
+                    <a class="nav-link" id="nav-tab5-tab" data-toggle="tab" href="#tab5" dir="rtl">قرآن</a>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                 <!-- Tab 1 -->
+                <div class="tab-pane fade show active" id="tab1">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Worksheet Number</th>
+                                    <th>Week</th>
+                                    <th>Worksheet</th>
+                                    <th>Worksheet Path</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Week One</td>
+                                    <td dir="rtl">سورة الفاتحة</td>
+                                    <td><button class="btn btn-primary"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tableBtn" class="">
+                        <div class="f-left">
+                            <button class="btn btn-primary-outline mr-1"><i class="fas fa-unlink"></i> Detach</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="tab-pane fade show" id="tab2">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Worksheet Number</th>
+                                    <th>Week</th>
+                                    <th>Worksheet</th>
+                                    <th>Worksheet Path</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Week One</td>
+                                    <td dir="rtl">سورة الفاتحة</td>
+                                    <td><button class="btn btn-primary"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tableBtn" class="">
+                        <div class="f-left">
+                            <button class="btn btn-primary-outline mr-1"><i class="fas fa-unlink"></i> Detach</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="tab-pane fade show" id="tab3">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Worksheet Number</th>
+                                    <th>Week</th>
+                                    <th>Worksheet</th>
+                                    <th>Worksheet Path</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Week One</td>
+                                    <td dir="rtl">سورة الفاتحة</td>
+                                    <td><button class="btn btn-primary"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tableBtn" class="">
+                        <div class="f-left">
+                            <button class="btn btn-primary-outline mr-1"><i class="fas fa-unlink"></i> Detach</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4 -->
+                <div class="tab-pane fade show" id="tab4">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Worksheet Number</th>
+                                    <th>Week</th>
+                                    <th>Worksheet</th>
+                                    <th>Worksheet Path</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Week One</td>
+                                    <td dir="rtl">سورة الفاتحة</td>
+                                    <td><button class="btn btn-primary"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tableBtn" class="">
+                        <div class="f-left">
+                            <button class="btn btn-primary-outline mr-1"><i class="fas fa-unlink"></i> Detach</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 5 -->
+                <div class="tab-pane fade show" id="tab5">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Worksheet Number</th>
+                                    <th>Week</th>
+                                    <th>Worksheet</th>
+                                    <th>Worksheet Path</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Week One</td>
+                                    <td dir="rtl">سورة الفاتحة</td>
+                                    <td><button class="btn btn-primary"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tableBtn" class="">
+                        <div class="f-left">
+                            <button class="btn btn-primary-outline mr-1"><i class="fas fa-unlink"></i> Detach</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+            
+
+
+        
+
+
+
+
+
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
+        
+
+
+</body>
+
+</html>

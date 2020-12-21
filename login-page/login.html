@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/reboot.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../vendor/jquery-ui/jquery-ui.css">
+
+    <title>Login | Harf</title>
+</head>
+
+<body>
+
+    <header id="log-header">
+        <div dir="rtl" class="lang d-inline">
+            <a href="#"><i class="fas fa-globe"></i><span class="lswitch pr-1">عربي</span></a>
+        </div>
+        <div class="learn d-inline">
+            <a href="#" class="btn btn-yellow">Learn More</a>
+        </div>
+        <div class="p-1 p-md-3 logo d-inline f-right">
+            <a href="#"><img src="../img/harf-logo.svg" alt="harf logo"></a>
+        </div>
+    </header>
+    
+
+    <div class="container-fluid pt-1 pt-md-3">
+        <div class="row">
+
+            <div class="col-xl-7 col-lg-6 col-md-6 d-none d-sm-block align-self-center">
+                <div class="text-center log_img">
+                    <img src="../img/login-page.png" alt="login page">
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="p-4 p-md-4  log-card">
+                    <h1>Please enter your login information</h1>
+                    <p class="pt-1 pt-md-3">New user? <a href="#">Sign Up Here</a></p>
+                    <form action="" class=" pt-1 pt-md-3">
+                        <div class="form-group">
+                            <select name="logType" id="logType" class="form-control">
+                                <option value="logintype" data-class="login-type-icon">Login Type </option>
+                                <option value="jquerylogo" data-class="administrator-icon">Administrator</option>
+                                <option value="jqueryui" data-class="school-icon">School</option>
+                                <option value="jqueryuilogo" data-class="teacher-icon">Teacher</option>
+                                <option value="jqueryuilogo" data-class="parent-icon">Parent</option>
+                                <option value="jqueryuilogo" data-class="student-icon">Student</option>
+                            </select>
+                        </div>
+                        <div class="form-group input-icons">
+                            <i class="fas fa-user icon"></i>
+                            <input type="text" class="form-control" placeholder="User Name"
+                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'User Name'">
+                        </div>
+                        <div class="form-group input-icons">
+                            <i class="fas fa-lock icon"></i>
+                            <input type="password" class="form-control" placeholder="Password"
+                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-lg btn-primary">LOGIN</button>
+                        </div>
+                        <div class="col-sm-6 form-group form-check d-inline">
+                            <input type="checkbox" class="form-check-input">
+                            <label for="Remember me">Remember me</label>
+                        </div>
+                        <div class="col-sm-6 text-right pr-0 form-group d-inline f-right">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(function () {
+            $.widget("custom.iconselectmenu", $.ui.selectmenu, {
+                _renderItem: function (ul, item) {
+                    var li = $("<li>"),
+                        wrapper = $("<div>", { text: item.label });
+
+                    if (item.disabled) {
+                        li.addClass("ui-state-disabled");
+                    }
+
+                    $("<span>", {
+                        style: item.element.attr("data-style"),
+                        "class": "ui-icon " + item.element.attr("data-class")
+                    })
+                        .appendTo(wrapper);
+
+                    return li.append(wrapper).appendTo(ul);
+                }
+            });
+
+            $("#logType")
+            .iconselectmenu({
+            create: function (event, ui) {
+                var widget = $(this).iconselectmenu("widget");
+                $span = $('<span id="' + this.id + 'selected" class="avatar-selected" > ').html("&nbsp;").appendTo(widget);
+                $span.attr("style", $(this).children(":first").data("style"));
+            },
+            change: function (event, ui) {
+                $("#" + this.id + 'selected').attr("class", ui.item.element.data("class"));
+            }
+        })
+                .iconselectmenu("menuWidget")
+                .addClass("ui-menu-icons");
+
+        });
+    </script>
+
+</body>
+
+</html>
