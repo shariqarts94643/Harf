@@ -1098,7 +1098,7 @@ form .page .btns button.next {
         display: block;
         position: fixed;
         right: 0;
-        top: 0;
+        top: 8px;
     }
 
     .navbar.responsive {
@@ -1186,6 +1186,7 @@ form .page .btns button.next {
         margin-left: 15px;
         border-radius: 5px;
         position: fixed;
+        left: 0;
     }
 
     .oSideBar.open {
