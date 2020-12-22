@@ -4,7 +4,8 @@
     font-family: 'Tajawal', sans-serif;
 }
 body[dir="rtl"] .oSideBar {
-    padding: 10px 10px 5px 10px;;
+    padding: 10px 10px 5px 10px;
+    position: sticky;
 }
 
 body[dir="rtl"] .sidenav a span {
