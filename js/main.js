@@ -1,11 +1,3 @@
-$(".lswitch").click(function () {
-  $(this).text(function (i, v) {
-    return v === 'عربي' ? 'Eng' : 'عربي'
-  })
-});
-
-
-
 
 // TABS 2 
 jQuery('ul.tabs').each(function () {

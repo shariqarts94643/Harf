@@ -977,7 +977,7 @@ form .page .btns button.next {
 }
 
 .log_img img {
-    width: 100%;
+    width: 80%;
 }
 
 .fltrow td {
@@ -1178,7 +1178,6 @@ form .page .btns button.next {
     }
 
     .logo a img {
-        margin: 10px;
         height: 44px;
     }
 
